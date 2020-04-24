@@ -22,4 +22,32 @@
       padding: 10px 15px;
     }
   }
+
+  .userInfo-Container {
+    display: flex;
+  }
+
+  .userInfo-Container img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+  }
+  .userInfo-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0 0 0 14px;
+  }
+
+  .userInfo-Wrapper:hover .userInfo-menu {
+    display: block;
+  }
+
+  .userInfo-menu:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
