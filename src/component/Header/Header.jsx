@@ -1,15 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { connect } from "react-redux"
-import { createStructuredSelectore, createStructuredSelector } from "reselect"
+import { createStructuredSelector } from "reselect"
 
 import { auth } from "../../firebase/firebase.utils"
 import CartIcon from "../CartComponent/CartIcon"
 import CartDropDown from "../CartDropDown/CartDropDown"
-import {
-  selectCartHiden,
-  selectCartHidden,
-} from "../../redux/cart/cart.selector"
+import { selectCartHidden } from "../../redux/cart/cart.selector"
 import { selectCurrentUser } from "../../redux/user/user.selector"
 
 import { ReactComponent as Logo } from "../../assets/crownLogo.svg"
